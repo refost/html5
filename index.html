@@ -20,7 +20,8 @@
   <link rel="stylesheet" href="css/main.css">
 
   <link rel="stylesheet" href="css/myStyle.css">
-  <link rel="stylesheet" href="css/styleBootstrap.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 </head>
@@ -28,26 +29,27 @@
 <body>
   <header class="header" id="header">
     <div class="container">
+
         <div class="top row">
-          <div class="logo col-1">
-          <img src="img/Lucid.png" height="" width="" alt="">
+          <div class="logo col-2">
+            <img src="img/Lucid.png" height="19px" width="69px" alt="logo">
             <p>onepage theme</p>
           </div>
-          <nav class="main-navigation col-5">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
+          <nav class="col-5">
+            <ul class="main-navigation">
+              <li><a class="lines" href="#">Home</a></li>
+              <li><a class="lines" href="#">Features</a></li>
+              <li><a class="lines" href="#">About</a></li>
+              <li><a class="lines" href="#">Testimonials</a></li>
+              <li><a class="lines" href="#">Pricing</a></li>
+              <li><a class="lines" href="#">Contact</a></li>
             </ul>
           </nav>
         </div>
 
       <div class="main-content row">
         <div class="left col-5">
-          <h3 class="categories">introducing lucid theme</h3>
+          <h2 class="categories">introducing lucid theme</h2>
           <h1 class="intro-title">Carefully crafted and beautiful landing page.</h1>
           <p class="intro">
             Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi,
@@ -58,7 +60,7 @@
             <a class="btn-filled" href="#">
               download now
             </a>
-            <a class="btn-filled" href="#">
+            <a class="btn-empty" href="#">
               view features
             </a>
           </div>
@@ -68,7 +70,29 @@
     </div>
   </header>
 
-
+  <section class="overview">
+    <div class="container">
+      <div class="row">
+        <div class="title-center lines col-12">
+          <h2>product overview</h2>
+          <h3>List of amazing features</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="feature col-3">
+          <div class="circl-icn">
+            <img src="img/icons/Monitor.svg" width="34px" height="28px" alt="icon screen">
+          </div>
+          <div class="descript">
+            <h4>Responsive</h4>
+            <p>
+              Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!---FONTAWESOM--->

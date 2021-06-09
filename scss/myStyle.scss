@@ -1,0 +1,242 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+
+/*--- Mixin ---*/
+
+@mixin flex-between(){
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin button(){
+  border-radius: 4px;
+  display: block;
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 48px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  text-align: center;
+  text-transform: uppercase;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@mixin links(){
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@mixin line(){
+  content: '';
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  background-color: #007bff;
+}
+
+/*--- Mixin ---*/
+
+/*---General classes---*/
+
+div,span,a,h1,h2,h3,h4,h5,p,ul,li,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+  max-width: 1170px;
+  padding: 0;
+}
+
+h1{
+  font-size: 48px;
+  letter-spacing: 1px;
+  line-height: 48px;
+  color: #fff;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 14px;
+  letter-spacing: 1px;
+  linne-height: 48px;
+  color: #008ed6;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 48px;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  text-align: center;
+}
+
+h4{
+  font-size: 24px;
+  font-size: 24px;
+  line-height: 20px;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  color: #999;
+  font-weight: 400;
+}
+
+.btn-filled{
+  @include button();
+  filter: drop-shadow(0 0 1.5px rgba(3,3,3,0.1));
+  background-color: #008ed6;
+}
+
+.btn-empty{
+  @include button();
+  background-color: rgba(0,142,214,0);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.title-center{
+  text-align: center;
+}
+
+// Підкреслення псевдокласами
+.lines{
+  &:after{
+    @include line();
+    bottom: -10px;
+    transform: translate(-21px, 0);
+  }
+  &:before{
+    @include line();
+    bottom: -10px;
+    transform: translate(1px, 0);
+  }
+}
+
+/*---General classes---*/
+
+/*--- HEADER ---*/
+
+.header{
+  background-color: #151319;
+  height: 640px;
+  overflow: hidden;
+  background-image: url("../img/photo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top{
+  padding: 40px 0;
+  @include flex-between();
+}
+
+.logo{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  p{
+    display: block;
+    width: 50px;
+    text-transform: uppercase;
+    font-size: 9px;
+    line-height: 9px;
+    font-weight: 600;
+  }
+
+}
+
+.main-content{
+  @include flex-between();
+}
+
+.main-navigation{
+  display: flex;
+  justify-content: space-around;
+  li{
+    display: block;
+    a{
+      @include links();
+      line-height: 58px;
+      position: relative;
+      &:after{
+        visibility: hidden;
+      }
+      &:before{
+        visibility: hidden;
+      }
+      &:hover{
+        text-decoration: none;
+        &:after{
+          visibility: visible;
+        }
+        &:before{
+          visibility: visible;
+        }
+      }
+
+    }
+  }
+}
+
+.left{
+  padding-top: 65px;
+}
+
+.buttons{
+  display: flex;
+}
+
+/*---HEADER--*/
+
+/*---SECTION FEATURES---*/
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  .circl-icn{
+    margin: 0 auto;
+    width: 88px;
+    height: 88px;
+    border-radius: 44px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    img{
+      display: block;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+  }
+  .descript{
+    text-align: center;
+  }
+}
+
+/*---SECTION FEATURES---*/
