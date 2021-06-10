@@ -21,36 +21,43 @@
 
   <link rel="stylesheet" href="css/myStyle.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 </head>
 
 <body>
-  <header class="header" id="header">
-    <div class="container">
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
 
-        <div class="top row">
-          <div class="logo col-2">
-            <img src="img/Lucid.png" height="19px" width="69px" alt="logo">
-            <p>onepage theme</p>
-          </div>
-          <nav class="col-5">
-            <ul class="main-navigation">
-              <li><a class="lines" href="#">Home</a></li>
-              <li><a class="lines" href="#">Features</a></li>
-              <li><a class="lines" href="#">About</a></li>
-              <li><a class="lines" href="#">Testimonials</a></li>
-              <li><a class="lines" href="#">Pricing</a></li>
-              <li><a class="lines" href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+<header class="header" id="header">
+  <div class="container">
 
-      <div class="main-content row">
-        <div class="left col-5">
+    <div class="top row">
+      <div class="logo col-2">
+        <img src="img/Lucid.png" height="19px" width="69px" alt="logo">
+        <p>onepage theme</p>
+      </div>
+      <nav class="col-5">
+        <ul class="main-navigation">
+          <li><a class="lines" href="#">Home</a></li>
+          <li><a class="lines" href="#">Features</a></li>
+          <li><a class="lines" href="#">About</a></li>
+          <li><a class="lines" href="#">Testimonials</a></li>
+          <li><a class="lines" href="#">Pricing</a></li>
+          <li><a class="lines" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="main-content row">
+      <div class="left col-5">
+        <div class="title">
           <h2 class="categories">introducing lucid theme</h2>
           <h1 class="intro-title">Carefully crafted and beautiful landing page.</h1>
+        </div>
+        <div class="descript">
           <p class="intro">
             Etiam ullamcorper et turpis eget hendrerit. Praesent varius risus mi,
             at elementum magna ultricies accumsan. Cras venenatis lacus sed dolor
@@ -65,55 +72,282 @@
             </a>
           </div>
         </div>
-        <img src="img/devices.png" height="" width="" alt="">
+      </div>
+      <img class="col-5" src="img/devices.png" height="" width="" alt="phone">
+    </div>
+  </div>
+</header>
+
+<section class="overview">
+  <div class="container">
+    <div class="row">
+      <div class="title-center lines col-12">
+        <h2>product overview</h2>
+        <h3>List of amazing features</h3>
       </div>
     </div>
-  </header>
-
-  <section class="overview">
-    <div class="container">
-      <div class="row">
-        <div class="title-center lines col-12">
-          <h2>product overview</h2>
-          <h3>List of amazing features</h3>
+    <div class="row">
+      <div class="feature col-3">
+        <div class="circl-icn">
+          <img src="img/icons/Monitor.svg" width="34px" height="28px" alt="icon screen">
+        </div>
+        <div class="descript">
+          <h4>Responsive</h4>
+          <p>
+            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+          </p>
         </div>
       </div>
-      <div class="row">
-        <div class="feature col-3">
-          <div class="circl-icn">
-            <img src="img/icons/Monitor.svg" width="34px" height="28px" alt="icon screen">
+      <div class="feature col-3">
+        <div class="circl-icn">
+          <img src="img/icons/Settings.svg" width="34px" height="28px" alt="icon screen">
+        </div>
+        <div class="descript">
+          <h4>Customizable</h4>
+          <p>
+            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+          </p>
+        </div>
+      </div>
+      <div class="feature col-3">
+        <div class="circl-icn">
+          <img src="img/icons/Like.svg" width="34px" height="28px" alt="icon screen">
+        </div>
+        <div class="descript">
+          <h4>Lovely design</h4>
+          <p>
+            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+          </p>
+        </div>
+      </div>
+      <div class="feature col-3">
+        <div class="circl-icn">
+          <img src="img/icons/Phone.svg" width="34px" height="28px" alt="icon screen">
+        </div>
+        <div class="descript">
+          <h4>Mobile Friendly</h4>
+          <p>
+            Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="details">
+  <div class="container">
+    <div class="row content">
+      <img class="col-5" src="img/devices.png" height="" width="" alt="phone">
+      <div class="left col-5">
+        <div class="title">
+          <h2>dip into the details</h2>
+          <h3 class="lines">Beautiful on every device</h3>
+        </div>
+        <div class="descript">
+          <p>
+            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
+            odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+          </p>
+          <ul class="special">
+            <li class="design">Awesome design</li>
+            <li class="resp">Fully responsive</li>
+            <li class="retina">Retina ready</li>
+            <li class="tons">Tons of features and easy to use</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="details-sec">
+  <div class="container">
+    <div class="row content">
+      <div class="left col-5">
+        <div class="title">
+          <h2>dip into the details</h2>
+          <h3 class="lines">Super easy to customize</h3>
+        </div>
+        <div class="descript">
+          <p>
+            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a
+            odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+          </p>
+        </div>
+      </div>
+      <img class="col-5" src="img/iPhone%205.png" height="" width="" alt="phone">
+    </div>
+  </div>
+</section>
+
+<section class="plans">
+  <div class="container">
+    <div class="row">
+      <div class="title-center lines col-12">
+        <h2>quality has its price</h2>
+        <h3>Pricings & Plans</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="slider">
+        <div class="slide">
+          <p class="descrip-slide">
+            Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters
+            salt.
+            “When we come to you,” said they to the Sea.
+          </p>
+          <div class="author">
+            <img src="img/Warstwa%207.png" width="" height="" alt="photo">
+            <p>John Doe
+              <span>CEO, THE RIVERS COMPANY</span>
+            </p>
           </div>
-          <div class="descript">
-            <h4>Responsive</h4>
-            <p>
-              Fusce fermentum placerat magna ac pharetra. Aliquam euismod elit non ipsum lacinia consectetur.
+        </div>
+        <div class="slide">
+          <p class="descrip-slide">
+            A shoe is not only a design, but it's a part of your body language, the way you walk.
+            The way you're going to move is quite dictated by your shoes.
+          </p>
+          <div class="author">
+            <img src="img/Warstwa%2016.png" width="" height="" alt="photo">
+            <p>Dean Winchester
+              <span>UX DESIGNER, GOOGLE INC.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <p class="descrip-slide">
+            Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters
+            salt.
+            “When we come to you,” said they to the Sea.
+          </p>
+          <div class="author">
+            <img src="img/Warstwa%207.png" width="" height="" alt="photo">
+            <p>John Doe
+              <span>CEO, THE RIVERS COMPANY</span>
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <p class="descrip-slide">
+            A shoe is not only a design, but it's a part of your body language, the way you walk.
+            The way you're going to move is quite dictated by your shoes.
+          </p>
+          <div class="author">
+            <img src="img/Warstwa%2016.png" width="" height="" alt="photo">
+            <p>Dean Winchester
+              <span>UX DESIGNER, GOOGLE INC.</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="slide">
+          <p class="descrip-slide">
+            Once upon a time all the Rivers combined to protest against the action of the Sea in making their waters
+            salt.
+            “When we come to you,” said they to the Sea.
+          </p>
+          <div class="author">
+            <img src="img/Warstwa%207.png" width="" height="" alt="photo">
+            <p>John Doe
+              <span>CEO, THE RIVERS COMPANY</span>
+            </p>
+          </div>
+        </div>
+        <div class="slide">
+          <p class="descrip-slide">
+            A shoe is not only a design, but it's a part of your body language, the way you walk.
+            The way you're going to move is quite dictated by your shoes.
+          </p>
+          <div class="author">
+            <img src="img/Warstwa%2016.png" width="" height="" alt="photo">
+            <p>Dean Winchester
+              <span>UX DESIGNER, GOOGLE INC.</span>
             </p>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
+<section class="now">
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <p>
+          <span>Like what you see?</span> Get this great theme now!
+        </p>
+      </div>
+      <div class="buttons col-4">
+        <a class="btn-empty" href="#">
+          view features
+        </a>
+        <a class="btn-filled" href="#">
+          download now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!---FONTAWESOM--->
-  <i class="fab fa-linkedin-in"></i>
-  <i class="fab fa-facebook-f"></i>
-  <i class="fab fa-twitter"></i>
-  <i class="fab fa-dribbble"></i>
-  <i class="fab fa-behance"></i>
-  <!---FOONTAWESOM--->
+<section class="plans-sec">
+  <div class="container">
+    <div class="row">
+      <div class="title-center lines col-12">
+        <h2>quality has its price</h2>
+        <h3>Pricings & Plans</h3>
+      </div>
+    </div>
+    <div class="price row">
+      <div class="price-item col-3">
+        <div class="type">
+            <h4>free</h4>
+          </div>
+        <div class="expensive">
+            <p><sup><i class="fas fa-dollar-sign"></i></sup><span>0</span> /per month</p>
+          </div>
+        <div class="descript">
+          <p>
+            Fusce fermentum placerat magna ac pharetra.
+            Aliquam euismod elit non ipsum <span>lacinia</span>span> consectetur.
+          </p>
+          <a class="btn-empty" href="#">
+            view features
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="https://kit.fontawesome.com/cb166c8b56.js" crossorigin="anonymous"></script>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<!---FONTAWESOM--->
+<i class="fab fa-linkedin-in"></i>
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-dribbble"></i>
+<i class="fab fa-behance"></i>
+<!---FOONTAWESOM--->
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<script src="https://kit.fontawesome.com/cb166c8b56.js" crossorigin="anonymous"></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

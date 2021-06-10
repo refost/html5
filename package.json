@@ -27,5 +27,13 @@
     "bootstrap-scss": "^5.0.1",
     "jquery": "^3.6.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/refost/html5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/refost/html5/issues"
+  },
+  "homepage": "https://github.com/refost/html5#readme",
   "description": ""
 }

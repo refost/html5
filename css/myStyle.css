@@ -1112,6 +1112,18 @@ p {
   bottom: -10px;
   transform: translate(1px, 0); }
 
+.title {
+  position: relative; }
+  .title .lines:after {
+    left: 0;
+    bottom: -10px;
+    transform: translate(23px, 0); }
+  .title .lines:before {
+    left: 0;
+    bottom: -10px; }
+  .title h2, .title h3 {
+    text-align: left; }
+
 /*---General classes---*/
 /*--- HEADER ---*/
 .header {
@@ -1173,7 +1185,10 @@ p {
   display: flex; }
 
 /*---HEADER--*/
-/*---SECTION FEATURES---*/
+/*---SECTION OVERVIEW---*/
+.overview {
+  border-bottom: 1px solid #ededed; }
+
 .feature {
   display: flex;
   flex-direction: column; }
@@ -1194,6 +1209,125 @@ p {
   .feature .descript {
     text-align: center; }
 
-/*---SECTION FEATURES---*/
+/*---SECTION OVERVIEW---*/
+/*---SECTION DETAILS---*/
+.special {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #1b1b1b;
+  font-weight: 400;
+  list-style-position: inside; }
+  .special .design {
+    list-style-image: url("../img/icons/Cup.svg"); }
+  .special .resp {
+    list-style-image: url("../img/icons/Mouse.svg"); }
+  .special .retina {
+    list-style-image: url("../img/icons/Energy.svg"); }
+  .special .tons {
+    list-style-image: url("../img/icons/Speedometer.svg"); }
+
+/*---SECTION DETAILS---*/
+/*---SECTION DETAILS-SEC---*/
+.details-sec {
+  background-color: #f2f2f2; }
+
+/*---SECTION DETAILS-SEC---*/
+/*---SECTION PLANS---*/
+.plans {
+  background-color: #15141a;
+  background-image: url("../img/Warstwa 8.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .plans h3, .plans p {
+    color: #fff; }
+
+.slider {
+  overflow: hidden; }
+
+.slick-track {
+  display: flex; }
+
+.slick-dots {
+  display: flex;
+  align-items: start;
+  justify-content: center; }
+
+.slick-dots li {
+  list-style: none; }
+
+.slick-dots button {
+  font-size: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0;
+  border-radius: 50%; }
+
+.slick-active button {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #fff; }
+
+.slide {
+  display: flex;
+  flex-direction: column; }
+
+.descrip-slide {
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: italic; }
+
+.author {
+  display: flex; }
+  .author p {
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400; }
+    .author p span {
+      display: block;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 800;
+      text-transform: uppercase; }
+
+/*---SECTION PLANS---*/
+/*---SECTION NOW---*/
+.now {
+  background-color: #15141a; }
+  .now p {
+    font-size: 36px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: 200; }
+    .now p span {
+      font-weight: 600; }
+  .now .row {
+    align-items: center; }
+
+/*---SECTION NOW---*/
+/*---SECTION PLANS-SEC---*/
+.price-item {
+  border: 1px solid #e0e0e0;
+  text-align: center; }
+  .price-item .btn-empty {
+    color: #008ed6;
+    border: 1px solid #e0e0e0; }
+
+.expensive {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0; }
+  .expensive span {
+    font-size: 48px;
+    line-height: 20px;
+    color: #1a1a1a;
+    font-weight: 600; }
+
+/*---SECTION PLANS-SEC---*/
 
 /*# sourceMappingURL=myStyle.css.map */

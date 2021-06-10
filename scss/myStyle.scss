@@ -137,6 +137,24 @@ p{
   }
 }
 
+.title{
+  position: relative;
+  .lines{
+    &:after{
+      left: 0;
+      bottom: -10px;
+      transform: translate(23px, 0);
+    }
+    &:before{
+      left: 0;
+      bottom: -10px;
+    }
+  }
+  h2,h3{
+    text-align: left;
+  }
+}
+
 /*---General classes---*/
 
 /*--- HEADER ---*/
@@ -213,7 +231,11 @@ p{
 
 /*---HEADER--*/
 
-/*---SECTION FEATURES---*/
+/*---SECTION OVERVIEW---*/
+
+.overview{
+  border-bottom: 1px solid #ededed;
+}
 
 .feature{
   display: flex;
@@ -239,4 +261,165 @@ p{
   }
 }
 
-/*---SECTION FEATURES---*/
+/*---SECTION OVERVIEW---*/
+
+/*---SECTION DETAILS---*/
+
+.details{
+
+}
+
+
+.special{
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #1b1b1b;
+  font-weight: 400;
+  list-style-position: inside;
+  .design{
+    list-style-image: url("../img/icons/Cup.svg");
+  }
+  .resp{
+    list-style-image: url("../img/icons/Mouse.svg");
+  }
+  .retina{
+    list-style-image: url("../img/icons/Energy.svg");
+  }
+  .tons{
+    list-style-image: url("../img/icons/Speedometer.svg");
+  }
+}
+
+/*---SECTION DETAILS---*/
+
+/*---SECTION DETAILS-SEC---*/
+
+.details-sec{
+  background-color: #f2f2f2;
+}
+
+/*---SECTION DETAILS-SEC---*/
+
+/*---SECTION PLANS---*/
+
+.plans{
+  background-color: #15141a;;
+  background-image: url("../img/Warstwa 8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  h3,p{
+    color: #fff;
+  }
+}
+
+.slider{
+  overflow: hidden;
+}
+
+.slick-track{
+  display: flex;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0;
+  border-radius: 50%;
+}
+
+.slick-active button {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.slide{
+  display: flex;
+  flex-direction: column;
+}
+
+.descrip-slide{
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.author{
+  display: flex;
+  p{
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    span{
+      display: block;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+}
+/*---SECTION PLANS---*/
+
+/*---SECTION NOW---*/
+
+.now{
+  background-color: #15141a;
+  p{
+    font-size: 36px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: 200;
+    span{
+      font-weight: 600;
+    }
+  }
+  .row{
+    align-items: center;
+  }
+}
+
+/*---SECTION NOW---*/
+
+/*---SECTION PLANS-SEC---*/
+
+.price-item{
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  .btn-empty{
+    color: #008ed6;
+    border: 1px solid #e0e0e0;
+  }
+}
+
+.expensive{
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  span{
+    font-size: 48px;
+    line-height: 20px;
+    color: #1a1a1a;
+    font-weight: 600;
+  }
+}
+
+
+/*---SECTION PLANS-SEC---*/
