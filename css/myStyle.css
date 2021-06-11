@@ -1016,15 +1016,15 @@ div, span, a, h1, h2, h3, h4, h5, p, ul, li, body {
   padding: 0; }
 
 h1 {
+  margin-top: 20px;
   font-size: 48px;
-  letter-spacing: 1px;
   line-height: 48px;
   color: #fff;
   font-weight: 600; }
 
 h2 {
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 1.4px;
   linne-height: 48px;
   color: #008ed6;
   font-weight: 700;
@@ -1048,8 +1048,7 @@ h4 {
 
 p {
   font-size: 18px;
-  letter-spacing: 1px;
-  line-height: 18px;
+  line-height: 26px;
   color: #999;
   font-weight: 400; }
 
@@ -1083,6 +1082,7 @@ p {
   font-family: "Source Sans Pro";
   text-align: center;
   text-transform: uppercase;
+  margin-left: 20px;
   background-color: rgba(0, 142, 214, 0);
   border: 1px solid rgba(255, 255, 255, 0.2); }
   .btn-empty:hover {
@@ -1135,21 +1135,25 @@ p {
   background-size: cover; }
 
 .top {
-  padding: 40px 0;
+  padding: 19px 0;
   display: flex;
   justify-content: space-between; }
 
 .logo {
+  margin-left: 2px;
+  margin-top: 3px;
   display: flex;
   justify-content: left;
   align-items: center; }
   .logo p {
+    margin-left: 8px;
     display: block;
     width: 50px;
     text-transform: uppercase;
     font-size: 9px;
     line-height: 9px;
-    font-weight: 600; }
+    font-weight: 600;
+    letter-spacing: 1.4px; }
 
 .main-content {
   display: flex;
@@ -1157,12 +1161,12 @@ p {
 
 .main-navigation {
   display: flex;
-  justify-content: space-around; }
+  margin-left: 23px; }
   .main-navigation li {
-    display: block; }
+    display: block;
+    margin-right: 23px; }
     .main-navigation li a {
       font-size: 16px;
-      letter-spacing: 1px;
       color: #fff;
       font-weight: 600;
       line-height: 58px;
@@ -1179,10 +1183,20 @@ p {
           visibility: visible; }
 
 .left {
-  padding-top: 65px; }
+  padding-top: 63px;
+  padding-left: 15px; }
+
+.descript {
+  margin-top: 24px;
+  width: 85%; }
 
 .buttons {
+  margin-top: 60px;
   display: flex; }
+
+.phone {
+  padding-top: 25px;
+  padding-left: 93px; }
 
 /*---HEADER--*/
 /*---SECTION OVERVIEW---*/
@@ -1316,18 +1330,104 @@ p {
   border: 1px solid #e0e0e0;
   text-align: center; }
   .price-item .btn-empty {
+    margin: 0 auto;
     color: #008ed6;
     border: 1px solid #e0e0e0; }
+
+.type h4 {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .expensive {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0; }
-  .expensive span {
+
+.cost {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .cost i {
+    display: block; }
+  .cost .number {
+    display: block;
+    align-self: center;
     font-size: 48px;
-    line-height: 20px;
+    line-height: 28px;
     color: #1a1a1a;
     font-weight: 600; }
 
+.descript span {
+  color: #008ed6; }
+
 /*---SECTION PLANS-SEC---*/
+/*---SECTION TOUCH---*/
+.touch {
+  background-color: #ededed; }
+
+.contacts-item img {
+  display: block;
+  margin: 0 auto; }
+
+.contacts-item p {
+  display: block;
+  text-align: center;
+  line-height: 26px; }
+  .contacts-item p span {
+    display: block; }
+
+.feedback form {
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  display: flex;
+  background-color: #15141a; }
+  .feedback form .btn-filled {
+    margin-left: auto;
+    border: none; }
+
+.form-item {
+  padding: 0 15px;
+  width: 50%;
+  height: 50px;
+  background-color: rgba(0, 142, 214, 0);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 48px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/*---SECTION TOUCH---*/
+/*---SECTION MAP---*/
+/*---SECTION MAP---*/
+/*---FOOTER---*/
+.social {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  .social a:hover {
+    text-decoration: none; }
+  .social i {
+    color: #444348;
+    display: block; }
+    .social i:hover {
+      color: #008dd5; }
+
+.footer {
+  background-color: #15141a; }
+  .footer p {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 48px;
+    color: #444348;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase; }
+
+/*---FOOTER---*/
 
 /*# sourceMappingURL=myStyle.css.map */

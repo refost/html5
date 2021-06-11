@@ -36,10 +36,10 @@
 
     <div class="top row">
       <div class="logo col-2">
-        <img src="img/Lucid.png" height="19px" width="69px" alt="logo">
+        </a><img src="img/Lucid.png" height="19px" width="69px" alt="logo">
         <p>onepage theme</p>
       </div>
-      <nav class="col-5">
+      <nav class="col-5 col-md-5">
         <ul class="main-navigation">
           <li><a class="lines" href="#">Home</a></li>
           <li><a class="lines" href="#">Features</a></li>
@@ -52,7 +52,7 @@
     </div>
 
     <div class="main-content row">
-      <div class="left col-5">
+      <div class="left col-6">
         <div class="title">
           <h2 class="categories">introducing lucid theme</h2>
           <h1 class="intro-title">Carefully crafted and beautiful landing page.</h1>
@@ -73,7 +73,9 @@
           </div>
         </div>
       </div>
-      <img class="col-5" src="img/devices.png" height="" width="" alt="phone">
+      <div class="phone col-6">
+        <img src="img/devices.png" height="621px" width="510px" alt="phone">
+      </div>
     </div>
   </div>
 </header>
@@ -307,12 +309,75 @@
             <h4>free</h4>
           </div>
         <div class="expensive">
-            <p><sup><i class="fas fa-dollar-sign"></i></sup><span>0</span> /per month</p>
+          <div class="cost">
+            <i class="fas fa-dollar-sign"></i><span class="number">0</span>
+          </div>
+          <p>/per month</p>
           </div>
         <div class="descript">
           <p>
             Fusce fermentum placerat magna ac pharetra.
-            Aliquam euismod elit non ipsum <span>lacinia</span>span> consectetur.
+            Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.
+          </p>
+          <a class="btn-empty" href="#">
+            view features
+          </a>
+        </div>
+      </div>
+      <div class="price-item col-3">
+        <div class="type">
+          <h4>free</h4>
+        </div>
+        <div class="expensive">
+          <div class="cost">
+            <i class="fas fa-dollar-sign"></i><span class="number">0</span>
+          </div>
+          <p>/per month</p>
+        </div>
+        <div class="descript">
+          <p>
+            Fusce fermentum placerat magna ac pharetra.
+            Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.
+          </p>
+          <a class="btn-empty" href="#">
+            view features
+          </a>
+        </div>
+      </div>
+      <div class="price-item col-3">
+        <div class="type">
+          <h4>free</h4>
+        </div>
+        <div class="expensive">
+          <div class="cost">
+            <i class="fas fa-dollar-sign"></i><span class="number">0</span>
+          </div>
+          <p>/per month</p>
+        </div>
+        <div class="descript">
+          <p>
+            Fusce fermentum placerat magna ac pharetra.
+            Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.
+          </p>
+          <a class="btn-empty" href="#">
+            view features
+          </a>
+        </div>
+      </div>
+      <div class="price-item col-3">
+        <div class="type">
+          <h4>free</h4>
+        </div>
+        <div class="expensive">
+          <div class="cost">
+            <i class="fas fa-dollar-sign"></i><span class="number">0</span>
+          </div>
+          <p>/per month</p>
+        </div>
+        <div class="descript">
+          <p>
+            Fusce fermentum placerat magna ac pharetra.
+            Aliquam euismod elit non ipsum <span>lacinia</span> consectetur.
           </p>
           <a class="btn-empty" href="#">
             view features
@@ -323,12 +388,80 @@
   </div>
 </section>
 
+<section class="touch">
+  <div class="container">
+    <div class="row">
+      <div class="title-center lines col-12">
+        <h2>stay in touch</h2>
+        <h3>Contact us</h3>
+      </div>
+    </div>
+    <div class="contacts row">
+      <div class="contacts-item col-4">
+        <img src="img/icons/Phone.svg" width="30px" height="" alt="icon">
+        <p>
+          Phone: (415) 124-5678
+        </p>
+        <p>
+          Fax: (412) 123-8290
+        </p>
+      </div>
+      <div class="contacts-item col-4">
+        <img src="img/icons/Pointer.svg" width="30px" height="" alt="icon">
+        <p>
+          1001 Brickell Bay Dr.
+          <span>Suite 1900</span>
+          Miami, FL 33131
+        </p>
+      </div>
+      <div class="contacts-item col-4">
+        <img src="img/icons/Envelope.svg" width="30px" height="" alt="icon">
+        <p>
+          support@yourname.com
+        </p>
+      </div>
+    </div>
+    <div class="feedback row">
+      <form class="col-8" action="">
+        <div class="personal">
+          <input type="text" name="name" class="form-item" id="name" placeholder="name*" required>
+          <input type="email" name="email" class="form-item" id="email" placeholder="email*" required>
+          <input type="text" name="subject" class="form-item" id="subject" placeholder="subject*" required>
+        </div>
+        <div class="message">
+          <input type="textarea" class="form-item" name="message" placeholder="message*" required>
+          <input type="submit" class="btn-filled" value="send message">
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1068.2728375739548!2d-80.19017253680607!3d25.763058114757065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6823a2f4663%3A0xc4e9cdd11cabeb63!2sMP%20%26%20Silva%20LLC!5e0!3m2!1sru!2sua!4v1623400357014!5m2!1sru!2sua" width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="social col-4">
+        <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      </div>
+    <div class="row">
+      <p class="col-4">
+        copyright © 2014 lucid onepage theme
+      </p>
+    </div>
+  </div>
+</footer>
+
 <!---FONTAWESOM--->
-<i class="fab fa-linkedin-in"></i>
-<i class="fab fa-facebook-f"></i>
-<i class="fab fa-twitter"></i>
-<i class="fab fa-dribbble"></i>
-<i class="fab fa-behance"></i>
+
 <!---FOONTAWESOM--->
 
 <script src="https://kit.fontawesome.com/cb166c8b56.js" crossorigin="anonymous"></script>
