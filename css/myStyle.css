@@ -1025,19 +1025,17 @@ h1 {
 h2 {
   font-size: 14px;
   letter-spacing: 1.4px;
-  linne-height: 48px;
   color: #008ed6;
   font-weight: 700;
   text-transform: uppercase; }
 
 h3 {
+  padding-top: 10px;
   font-size: 36px;
-  letter-spacing: 1px;
-  line-height: 48px;
+  letter-spacing: normal;
   color: #1a1a1a;
-  font-weight: 700;
-  font-family: "Source Sans Pro";
-  text-align: center; }
+  font-weight: 600;
+  font-family: "Source Sans Pro"; }
 
 h4 {
   font-size: 24px;
@@ -1065,7 +1063,8 @@ p {
   text-align: center;
   text-transform: uppercase;
   filter: drop-shadow(0 0 1.5px rgba(3, 3, 3, 0.1));
-  background-color: #008ed6; }
+  background-color: #008ed6;
+  padding-top: 1px; }
   .btn-filled:hover {
     text-decoration: none;
     color: #fff; }
@@ -1099,8 +1098,8 @@ p {
   position: absolute;
   left: 50%;
   background-color: #007bff;
-  bottom: -10px;
-  transform: translate(-21px, 0); }
+  bottom: -36px;
+  transform: translate(-20px, 0); }
 
 .lines:before {
   content: '';
@@ -1109,20 +1108,20 @@ p {
   position: absolute;
   left: 50%;
   background-color: #007bff;
-  bottom: -10px;
-  transform: translate(1px, 0); }
+  bottom: -36px;
+  transform: translate(2px, 0); }
 
 .title {
   position: relative; }
+  .title h2, .title h3 {
+    text-align: left; }
   .title .lines:after {
     left: 0;
-    bottom: -10px;
+    bottom: -36px;
     transform: translate(23px, 0); }
   .title .lines:before {
     left: 0;
-    bottom: -10px; }
-  .title h2, .title h3 {
-    text-align: left; }
+    bottom: -36px; }
 
 /*---General classes---*/
 /*--- HEADER ---*/
@@ -1133,6 +1132,15 @@ p {
   background-image: url("../img/photo.png");
   background-repeat: no-repeat;
   background-size: cover; }
+  .header .lines:before {
+    bottom: -10px; }
+  .header .lines:after {
+    bottom: -10px; }
+  .header .descript {
+    margin-top: 24px;
+    width: 85%; }
+  .header h2 {
+    letter-spacing: 0.1em; }
 
 .top {
   padding: 19px 0;
@@ -1186,10 +1194,6 @@ p {
   padding-top: 63px;
   padding-left: 15px; }
 
-.descript {
-  margin-top: 24px;
-  width: 85%; }
-
 .buttons {
   margin-top: 60px;
   display: flex; }
@@ -1201,7 +1205,19 @@ p {
 /*---HEADER--*/
 /*---SECTION OVERVIEW---*/
 .overview {
+  padding-top: 62px;
+  padding-bottom: 71px;
   border-bottom: 1px solid #ededed; }
+  .overview .lines:before {
+    transform: translate(1px, 0); }
+  .overview .lines:after {
+    transform: translate(-21px, 0); }
+  .overview .descript {
+    margin-top: 24px;
+    width: 85%; }
+
+.list {
+  padding-top: 110px; }
 
 .feature {
   display: flex;
@@ -1221,42 +1237,100 @@ p {
       top: 50%;
       left: 50%; }
   .feature .descript {
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 33px;
+    width: 90%; }
+    .feature .descript p {
+      padding-top: 15px; }
 
 /*---SECTION OVERVIEW---*/
 /*---SECTION DETAILS---*/
+.details {
+  padding-top: 66px;
+  padding-bottom: 19px; }
+  .details img {
+    margin-left: 20px; }
+  .details .left {
+    padding-top: 50px;
+    padding-left: 15px; }
+  .details .lines:before {
+    bottom: -27px;
+    transform: translate(22px, 0); }
+  .details .lines:after {
+    bottom: -27px;
+    transform: translate(0, 0); }
+  .details .descript {
+    padding-top: 51px;
+    width: 85%; }
+
 .special {
+  padding-top: 28px;
   font-size: 18px;
-  letter-spacing: 1px;
   line-height: 30px;
   color: #1b1b1b;
   font-weight: 400;
   list-style-position: inside; }
-  .special .design {
-    list-style-image: url("../img/icons/Cup.svg"); }
-  .special .resp {
-    list-style-image: url("../img/icons/Mouse.svg"); }
-  .special .retina {
-    list-style-image: url("../img/icons/Energy.svg"); }
-  .special .tons {
-    list-style-image: url("../img/icons/Speedometer.svg"); }
+  .special li {
+    padding-bottom: 6px; }
+
+.design {
+  list-style-image: url("../img/icons/Cup.svg"); }
+
+.resp {
+  list-style-image: url("../img/icons/Mouse.svg"); }
+
+.retina {
+  list-style-image: url("../img/icons/Energy.svg"); }
+
+.tons {
+  list-style-image: url("../img/icons/Speedometer.svg"); }
 
 /*---SECTION DETAILS---*/
+.details-sec {
+  padding-top: 66px;
+  padding-bottom: 163px; }
+
+.forImage {
+  position: relative; }
+  .forImage img {
+    position: absolute;
+    top: -33px;
+    right: -4px; }
+
 /*---SECTION DETAILS-SEC---*/
 .details-sec {
   background-color: #f2f2f2; }
+  .details-sec .lines:before {
+    bottom: -29px;
+    transform: translate(22px, 0); }
+  .details-sec .lines:after {
+    bottom: -29px;
+    transform: translate(0, 0); }
+  .details-sec .descript {
+    padding-top: 51px;
+    width: 85%; }
 
 /*---SECTION DETAILS-SEC---*/
 /*---SECTION PLANS---*/
 .plans {
+  padding-top: 61px;
+  padding-bottom: 61px;
   background-color: #15141a;
   background-image: url("../img/Warstwa 8.png");
   background-repeat: no-repeat;
   background-size: cover; }
   .plans h3, .plans p {
     color: #fff; }
+  .plans .lines:before {
+    bottom: -30px;
+    transform: translate(1px, 0); }
+  .plans .lines:after {
+    bottom: -30px;
+    transform: translate(-21px, 0); }
 
 .slider {
+  padding-top: 115px;
   overflow: hidden; }
 
 .slick-track {
@@ -1265,12 +1339,15 @@ p {
 .slick-dots {
   display: flex;
   align-items: start;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 129px;
+  margin-left: 22px; }
 
 .slick-dots li {
   list-style: none; }
 
 .slick-dots button {
+  margin-right: 21px;
   font-size: 0;
   width: 7px;
   height: 7px;
@@ -1291,17 +1368,27 @@ p {
   flex-direction: column; }
 
 .descrip-slide {
+  padding-left: 12px;
+  width: 95%;
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+  letter-spacing: -0.3px; }
 
 .author {
-  display: flex; }
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-left: 15px; }
+  .author img {
+    margin-top: 13px;
+    border-radius: 50%; }
   .author p {
+    padding-top: 11px;
+    padding-left: 23px;
     font-size: 16px;
-    line-height: 42px;
     font-weight: 400; }
     .author p span {
       display: block;
@@ -1313,16 +1400,27 @@ p {
 /*---SECTION PLANS---*/
 /*---SECTION NOW---*/
 .now {
+  padding-bottom: 60px;
   background-color: #15141a; }
   .now p {
+    padding-top: 52px;
     font-size: 36px;
     line-height: 48px;
     color: #ffffff;
-    font-weight: 200; }
+    font-weight: 200;
+    letter-spacing: 0.22px; }
     .now p span {
+      letter-spacing: 0.1px;
       font-weight: 600; }
   .now .row {
     align-items: center; }
+  .now .col-8 {
+    padding-left: 14px; }
+  .now .buttons {
+    margin-top: 59px;
+    padding-left: 25px; }
+  .now .btn-empty {
+    margin-right: 20px; }
 
 /*---SECTION NOW---*/
 /*---SECTION PLANS-SEC---*/

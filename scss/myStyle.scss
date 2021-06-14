@@ -75,20 +75,18 @@ h1{
 h2{
   font-size: 14px;
   letter-spacing: 1.4px;
-  linne-height: 48px;
   color: #008ed6;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 h3{
+  padding-top: 10px;
   font-size: 36px;
-  letter-spacing: 1px;
-  line-height: 48px;
+  letter-spacing: normal;
   color: #1a1a1a;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Source Sans Pro";
-  text-align: center;
 }
 
 h4{
@@ -110,6 +108,7 @@ p{
   @include button();
   filter: drop-shadow(0 0 1.5px rgba(3,3,3,0.1));
   background-color: #008ed6;
+  padding-top: 1px;
 }
 
 .btn-empty{
@@ -127,33 +126,35 @@ p{
 .lines{
   &:after{
     @include line();
-    bottom: -10px;
-    transform: translate(-21px, 0);
+    bottom: -36px;
+    transform: translate(-20px, 0);
   }
   &:before{
     @include line();
-    bottom: -10px;
-    transform: translate(1px, 0);
+    bottom: -36px;
+    transform: translate(2px, 0);
   }
 }
 
 .title{
   position: relative;
+  h2,h3{
+    text-align: left;
+  }
   .lines{
     &:after{
       left: 0;
-      bottom: -10px;
+      bottom: -36px;
       transform: translate(23px, 0);
     }
     &:before{
       left: 0;
-      bottom: -10px;
+      bottom: -36px;
     }
   }
-  h2,h3{
-    text-align: left;
-  }
 }
+
+
 
 /*---General classes---*/
 
@@ -166,6 +167,27 @@ p{
   background-image: url("../img/photo.png");
   background-repeat: no-repeat;
   background-size: cover;
+  .lines{
+    &:before{
+      bottom: -10px;
+    }
+    &:after{
+      bottom: -10px;
+    }
+  }
+  .descript{
+    margin-top: 24px;
+    width: 85%
+  }
+  h1{
+    span{
+
+    }
+
+  }
+  h2{
+    letter-spacing: 0.1em;
+  }
 }
 
 .top{
@@ -198,7 +220,6 @@ p{
 
 .main-navigation{
   display: flex;
-  //justify-content: space-around;
   margin-left: 23px;
   li{
     display: block;
@@ -232,11 +253,6 @@ p{
   padding-left: 15px;
 }
 
-.descript{
-  margin-top: 24px;
-  width: 85%
-}
-
 .buttons{
   margin-top: 60px;
   display: flex;
@@ -252,7 +268,25 @@ p{
 /*---SECTION OVERVIEW---*/
 
 .overview{
+  padding-top: 62px;
+  padding-bottom: 71px;
   border-bottom: 1px solid #ededed;
+  .lines{
+    &:before{
+      transform: translate(1px, 0);
+    }
+    &:after{
+      transform: translate(-21px, 0);
+    }
+  }
+  .descript{
+    margin-top: 24px;
+    width: 85%
+  }
+}
+
+.list{
+  padding-top: 110px;
 }
 
 .feature{
@@ -276,6 +310,12 @@ p{
   }
   .descript{
     text-align: center;
+    margin: 0 auto;
+    padding-top: 33px;
+    width:90%;
+    p{
+      padding-top: 15px;
+    }
   }
 }
 
@@ -283,45 +323,102 @@ p{
 
 /*---SECTION DETAILS---*/
 
-.details{
+.details {
+  padding-top: 66px;
+  padding-bottom: 19px;
+  img {
+    margin-left: 20px;
+  }
 
+  .left {
+    padding-top: 50px;
+    padding-left: 15px;
+  }
+  .lines{
+    &:before{
+      bottom: -27px;
+      transform: translate(22px, 0);
+    }
+    &:after{
+      bottom: -27px;
+      transform: translate(0, 0);
+    }
+  }
+  .descript{
+    padding-top: 51px;
+    width:85%;
+  }
 }
 
-
 .special{
+  padding-top: 28px;
   font-size: 18px;
-  letter-spacing: 1px;
   line-height: 30px;
   color: #1b1b1b;
   font-weight: 400;
   list-style-position: inside;
-  .design{
-    list-style-image: url("../img/icons/Cup.svg");
+  li{
+    padding-bottom: 6px;
   }
-  .resp{
-    list-style-image: url("../img/icons/Mouse.svg");
-  }
-  .retina{
-    list-style-image: url("../img/icons/Energy.svg");
-  }
-  .tons{
-    list-style-image: url("../img/icons/Speedometer.svg");
-  }
+}
+.design{
+  list-style-image: url("../img/icons/Cup.svg");
+}
+.resp{
+  list-style-image: url("../img/icons/Mouse.svg");
+}
+.retina{
+  list-style-image: url("../img/icons/Energy.svg");
+}
+.tons{
+  list-style-image: url("../img/icons/Speedometer.svg");
 }
 
 /*---SECTION DETAILS---*/
+
+.details-sec{
+  padding-top: 66px;
+  padding-bottom: 163px;
+}
+
+.forImage{
+  position: relative;
+  img{
+    position: absolute;
+    top: -33px;
+    right: -4px;
+  }
+}
 
 /*---SECTION DETAILS-SEC---*/
 
 .details-sec{
   background-color: #f2f2f2;
+  .lines{
+    &:before{
+      bottom: -29px;
+      transform: translate(22px, 0);
+    }
+    &:after{
+      bottom: -29px;
+      transform: translate(0, 0);
+    }
+  }
+  .descript{
+    padding-top: 51px;
+    width:85%;
+  }
 }
+
+
 
 /*---SECTION DETAILS-SEC---*/
 
 /*---SECTION PLANS---*/
 
 .plans{
+  padding-top: 61px;
+  padding-bottom: 61px;
   background-color: #15141a;;
   background-image: url("../img/Warstwa 8.png");
   background-repeat: no-repeat;
@@ -329,9 +426,20 @@ p{
   h3,p{
     color: #fff;
   }
+  .lines{
+    &:before{
+      bottom: -30px;
+      transform: translate(1px, 0);
+    }
+    &:after{
+      bottom: -30px;
+      transform: translate(-21px, 0);
+    }
+  }
 }
 
 .slider{
+  padding-top: 115px;
   overflow: hidden;
 }
 
@@ -343,6 +451,8 @@ p{
   display: flex;
   align-items: start;
   justify-content: center;
+  margin-top: 129px;
+  margin-left: 22px;
 }
 
 .slick-dots li {
@@ -350,6 +460,7 @@ p{
 }
 
 .slick-dots button {
+  margin-right: 21px;
   font-size: 0;
   width: 7px;
   height: 7px;
@@ -373,18 +484,29 @@ p{
 }
 
 .descrip-slide{
+  padding-left: 12px;
+  width:95%;
   font-size: 24px;
   line-height: 32px;
   color: #ffffff;
   font-weight: 400;
   font-style: italic;
+  letter-spacing: -0.3px;
 }
 
 .author{
   display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-left: 15px;
+  img{
+    margin-top: 13px;
+    border-radius: 50%;
+  }
   p{
+    padding-top: 11px;
+    padding-left: 23px;
     font-size: 16px;
-    line-height: 42px;
     font-weight: 400;
     span{
       display: block;
@@ -400,18 +522,32 @@ p{
 /*---SECTION NOW---*/
 
 .now{
+  padding-bottom: 60px;
   background-color: #15141a;
   p{
+    padding-top: 52px;
     font-size: 36px;
     line-height: 48px;
     color: #ffffff;
     font-weight: 200;
+    letter-spacing: 0.22px;
     span{
+      letter-spacing: 0.1px;
       font-weight: 600;
     }
   }
   .row{
     align-items: center;
+  }
+  .col-8{
+    padding-left: 14px;
+  }
+  .buttons{
+    margin-top: 59px;
+    padding-left: 25px;
+  }
+  .btn-empty{
+    margin-right: 20px;
   }
 }
 
