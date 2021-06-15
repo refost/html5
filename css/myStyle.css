@@ -1208,6 +1208,8 @@ p {
   padding-top: 62px;
   padding-bottom: 71px;
   border-bottom: 1px solid #ededed; }
+  .overview h3 {
+    letter-spacing: 0.1px; }
   .overview .lines:before {
     transform: translate(1px, 0); }
   .overview .lines:after {
@@ -1290,6 +1292,16 @@ p {
 .details-sec {
   padding-top: 66px;
   padding-bottom: 163px; }
+
+.resp {
+  padding-left: 3px;
+  list-style-position: outside;
+  margin-left: 22px; }
+
+.retina {
+  padding-left: 3px;
+  list-style-position: outside;
+  margin-left: 22px; }
 
 .forImage {
   position: relative; }
@@ -1424,49 +1436,98 @@ p {
 
 /*---SECTION NOW---*/
 /*---SECTION PLANS-SEC---*/
+.plans-sec {
+  padding-top: 57px;
+  padding-bottom: 60px; }
+  .plans-sec .lines:before {
+    bottom: -30px;
+    transform: translate(1px, 0); }
+  .plans-sec .lines:after {
+    bottom: -30px;
+    transform: translate(-21px, 0); }
+  .plans-sec .col-3 {
+    paddig: 10px; }
+  .plans-sec .descript {
+    padding-top: 45px;
+    width: 79%;
+    margin: 0 auto; }
+    .plans-sec .descript span {
+      color: #008ed6; }
+  .plans-sec .btn-empty {
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1px;
+    padding-right: 1px;
+    height: 52px;
+    border-color: #e0e0e0;
+    color: #008ed6; }
+
+.price {
+  padding-top: 100px; }
+
 .price-item {
+  padding: 0;
+  padding-bottom: 28px;
   border: 1px solid #e0e0e0;
   text-align: center; }
-  .price-item .btn-empty {
-    margin: 0 auto;
-    color: #008ed6;
-    border: 1px solid #e0e0e0; }
 
-.type h4 {
-  font-size: 24px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase; }
+.type {
+  padding-top: 27px;
+  padding-bottom: 22px; }
+  .type h4 {
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase; }
 
 .expensive {
+  padding-bottom: 32px;
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0; }
 
 .cost {
+  padding-top: 48px;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: row;
   justify-content: center; }
-  .cost i {
-    display: block; }
-  .cost .number {
-    display: block;
-    align-self: center;
-    font-size: 48px;
-    line-height: 28px;
-    color: #1a1a1a;
-    font-weight: 600; }
 
-.descript span {
-  color: #008ed6; }
+.dollar {
+  display: block;
+  font-size: 28px;
+  line-height: 12px; }
+
+.number {
+  padding-right: 6px;
+  display: block;
+  align-self: center;
+  font-size: 60px;
+  line-height: 28px;
+  color: #1a1a1a;
+  font-weight: 600; }
 
 /*---SECTION PLANS-SEC---*/
 /*---SECTION TOUCH---*/
 .touch {
+  padding-top: 57px;
+  padding-bottom: 8px;
   background-color: #ededed; }
+  .touch .lines:before {
+    bottom: -30px;
+    transform: translate(1px, 0); }
+  .touch .lines:after {
+    bottom: -30px;
+    transform: translate(-21px, 0); }
+  .touch .col-8 {
+    margin: 0 auto; }
+
+.contacts {
+  padding-top: 89px; }
 
 .contacts-item img {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto 24px auto; }
 
 .contacts-item p {
   display: block;
@@ -1475,19 +1536,32 @@ p {
   .contacts-item p span {
     display: block; }
 
-.feedback form {
+.feedback {
   margin: 0 auto;
+  padding-top: 59px;
+  padding-left: 66px;
+  padding-bottom: 40px;
   position: relative;
-  top: 20px;
+  top: 71px;
   display: flex;
   background-color: #15141a; }
-  .feedback form .btn-filled {
+  .feedback .btn-filled {
+    margin-top: 1px;
     margin-left: auto;
     border: none; }
 
+.personal {
+  width: 300px; }
+
+.message {
+  padding-left: 19px; }
+  .message .form-item {
+    height: 190px; }
+
 .form-item {
+  margin-bottom: 20px;
   padding: 0 15px;
-  width: 50%;
+  width: 300px;
   height: 50px;
   background-color: rgba(0, 142, 214, 0);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1504,6 +1578,7 @@ p {
 /*---FOOTER---*/
 .social {
   margin: 0 auto;
+  padding-bottom: 16px;
   display: flex;
   justify-content: center; }
   .social a:hover {
@@ -1515,6 +1590,7 @@ p {
       color: #008dd5; }
 
 .footer {
+  padding-top: 55px;
   background-color: #15141a; }
   .footer p {
     display: block;
