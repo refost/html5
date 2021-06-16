@@ -1682,7 +1682,9 @@ p {
   .phone {
     padding-left: 5%; }
   .details-sec img {
-    position: static; } }
+    position: static; }
+  .now .buttons {
+    justify-content: end; } }
 
 @media (max-width: 992px) {
   img {
@@ -1699,14 +1701,10 @@ p {
     padding-top: 0; }
   .price {
     justify-content: space-around; }
-    .price .descript {
-      display: none; }
   .price-item {
-    padding-bottom: 0;
     margin-bottom: 20px; }
-    .price-item:hover .descript {
-      display: block;
-      padding-bottom: 20px; }
+    .price-item .descript {
+      padding-left: 0; }
   .descrip-slide {
     padding-left: 0px;
     text-align: center;
@@ -1760,7 +1758,17 @@ p {
     margin: 0 auto;
     display: block; }
   .contacts-item {
-    padding-bottom: 15px; } }
+    padding-bottom: 15px; }
+  .now p {
+    text-align: center; }
+  .now .buttons {
+    padding: 0;
+    justify-content: space-around; }
+  .now .btn-empty {
+    width: 45%;
+    margin: 0; }
+  .now .btn-filled {
+    width: 45%; } }
 
 @media (max-width: 576px) {
   .details .descript {

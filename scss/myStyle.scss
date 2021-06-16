@@ -901,6 +901,12 @@ p{
       position: static;
     }
   }
+  .now{
+    .buttons{
+      justify-content: end;
+
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -925,19 +931,11 @@ p{
   }
   .price{
     justify-content: space-around;
-    .descript{
-      display: none;
-    }
   }
   .price-item {
-    padding-bottom: 0;
     margin-bottom: 20px;
-
-    &:hover {
-      .descript {
-        display: block;
-        padding-bottom: 20px;
-      }
+    .descript{
+      padding-left: 0;
     }
   }
   .descrip-slide{
@@ -1007,6 +1005,22 @@ p{
   }
   .contacts-item{
     padding-bottom: 15px;
+  }
+  .now{
+    p{
+      text-align: center;
+    }
+    .buttons{
+      padding: 0;
+      justify-content: space-around;
+    }
+    .btn-empty{
+      width: 45%;
+      margin: 0;
+    }
+    .btn-filled{
+      width: 45%;
+    }
   }
 }
 
