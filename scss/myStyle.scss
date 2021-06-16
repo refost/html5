@@ -928,21 +928,30 @@ p{
     .descript{
       display: none;
     }
-
-
-    }
   }
-  .price-item{
+  .price-item {
     padding-bottom: 0;
     margin-bottom: 20px;
-    &:hover{
-      .descript{
+
+    &:hover {
+      .descript {
         display: block;
         padding-bottom: 20px;
       }
+    }
   }
-
+  .descrip-slide{
+    padding-left: 0px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .author{
+     justify-content: center;
+    }
 }
+
+
 
 @media (max-width: 768px) {
   img{
@@ -956,9 +965,9 @@ p{
     .descript{
       display: flex;
       justify-content: space-around;
-      p{
-        width: 50%;
-      }
+    }
+    p{
+      width: 50%;
     }
     .special{
       padding-top: 0;
@@ -996,13 +1005,31 @@ p{
       display: block;
     }
   }
+  .contacts-item{
+    padding-bottom: 15px;
+  }
 }
 
 
-@media (max-width: 520px) {
-  img{
-    max-width: 100%;
-    height: auto;
-  }
+@media (max-width: 576px) {
 
+  .details{
+    .descript{
+      display: block;
+      text-align: center;
+    }
+    p{
+      width: 100%;
+    }
+    .special{
+      padding-top: 20px;
+      width: 100%;
+    }
+  }
+  .slider{
+    padding-top: 60px;
+  }
+  .slick-dots{
+    margin-top: 60px;
+  }
 }

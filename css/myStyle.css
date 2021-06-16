@@ -1700,14 +1700,20 @@ p {
   .price {
     justify-content: space-around; }
     .price .descript {
-      display: none; } }
-
-.price-item {
-  padding-bottom: 0;
-  margin-bottom: 20px; }
-  .price-item:hover .descript {
+      display: none; }
+  .price-item {
+    padding-bottom: 0;
+    margin-bottom: 20px; }
+    .price-item:hover .descript {
+      display: block;
+      padding-bottom: 20px; }
+  .descrip-slide {
+    padding-left: 0px;
+    text-align: center;
     display: block;
-    padding-bottom: 20px; }
+    margin: 0 auto; }
+  .author {
+    justify-content: center; } }
 
 @media (max-width: 768px) {
   img {
@@ -1718,8 +1724,8 @@ p {
   .details .descript {
     display: flex;
     justify-content: space-around; }
-    .details .descript p {
-      width: 50%; }
+  .details p {
+    width: 50%; }
   .details .special {
     padding-top: 0;
     width: 40%; }
@@ -1752,11 +1758,22 @@ p {
   .details img, .details-sec img {
     max-width: 50%;
     margin: 0 auto;
-    display: block; } }
+    display: block; }
+  .contacts-item {
+    padding-bottom: 15px; } }
 
-@media (max-width: 520px) {
-  img {
-    max-width: 100%;
-    height: auto; } }
+@media (max-width: 576px) {
+  .details .descript {
+    display: block;
+    text-align: center; }
+  .details p {
+    width: 100%; }
+  .details .special {
+    padding-top: 20px;
+    width: 100%; }
+  .slider {
+    padding-top: 60px; }
+  .slick-dots {
+    margin-top: 60px; } }
 
 /*# sourceMappingURL=myStyle.css.map */
