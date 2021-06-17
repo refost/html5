@@ -122,6 +122,13 @@ p{
   text-align: center;
 }
 
+.link{
+  display: block;
+  top: -150px;
+  position: relative;
+  visibility: hidden;
+}
+
 // Підкреслення псевдокласами
 .lines{
   &:after{
@@ -154,7 +161,9 @@ p{
   }
 }
 
-
+.burger{
+  display: none;
+}
 
 /*---General classes---*/
 
@@ -170,9 +179,11 @@ p{
   .lines{
     &:before{
       bottom: -10px;
+      transform: translate(-21px, 0);
     }
     &:after{
       bottom: -10px;
+      transform: translate(1px, 0);
     }
   }
   .descript{
@@ -190,9 +201,18 @@ p{
   }
 }
 
+.top-fix{
+  position: fixed;
+//  background: aqua;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+}
+
 .top{
   padding: 19px 0;
   @include flex-between();
+  width: 100%;
 }
 
 .logo{
@@ -226,12 +246,13 @@ p{
 }
 
 .main-content{
+  padding-top: 98px;
   @include flex-between();
 }
 
 .main-navigation{
   display: flex;
-  margin-left: 23px;
+  margin-left: 41px;
   li{
     display: block;
     margin-right: 23px;
@@ -772,14 +793,18 @@ p{
   left: -1px;
 }
 
+.form{
+  margin: 0 auto;
+}
+
+
 .feedback{
   margin: 0 auto;
-  padding-top: 59px;
-  padding-left: 66px;
-  padding-bottom: 40px;
+  padding: 59px 85px 40px 66px;
   position: relative;
   top: 69px;
   display: flex;
+  justify-content: space-between;
   background-color: #15141a;
    .btn-filled{
      margin-left: auto;
@@ -793,6 +818,7 @@ p{
 
 .message{
   padding-left: 19px;
+  width: 320px;
   .form-item{
     height: 190px;
     resize: none;
@@ -803,7 +829,7 @@ p{
 .form-item{
   margin-bottom: 20px;
   padding: 0 15px;
-  width: 300px;
+  width: 100%;
   height: 50px;
   background-color: rgba(0,142,214,0);
   border: 1px solid rgba(255,255,255,0.2);
@@ -893,6 +919,19 @@ p{
     max-width: 100%;
     height: auto;
   }
+  .nav{
+    width: 60%;
+  }
+
+  .logo{
+    width: 150px;
+  }
+  .main-navigation{
+    justify-content: end;
+    &:last-child{
+      margin-right: -23px;
+    }
+  }
   .phone{
     padding-left: 5%;
   }
@@ -907,12 +946,111 @@ p{
 
     }
   }
+  .feedback{
+    width: 80%;
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .personal{
+    margin: 0 auto;
+    width: 80%;
+  }
+  .message{
+    margin: 0 auto;
+    padding-left: 0;
+    width: 90%;
+    .btn-filled{
+      margin: 0 auto;
+    }
+  }
 }
 
 @media (max-width: 992px) {
   img{
     max-width: 100%;
     height: auto;
+  }
+  .burger{
+    display: block;
+    position: relative;
+    top: 12px;
+    width: 42px;
+    height: 32px;
+    background-color: #15141a;
+    border: solid 1px #000;
+    box-shadow: 0 0 2px 2px rgba(255,255,255,0.1);
+    span{
+      background-color: #fff;
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      left: 10px;
+      top: 14px;
+    }
+    &:after,&:before{
+      content: '';
+      background-color: #fff;
+      position: absolute;
+      width: 22px;
+      height: 2px;
+      left: 10px;
+    }
+    &:before{
+      top: 6px;
+    }
+    &:after{
+      bottom: 6px;
+    }
+  }
+  .background{
+    height: 288px;
+    background-color: #1a1a1a;
+  }
+  .nav{
+    display: none;
+  }
+  .active-menu{
+    display: block;
+    padding-bottom: 20px;
+    width: 100%;
+    //background-color: #1a1a1a;
+    position: absolute;
+    top: 98px;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin: 0;
+    .main-navigation{
+      flex-direction: column;
+      justify-content: center;
+      .lines{
+        &:after{
+          @include line();
+          bottom: -5px;
+        }
+        &:before{
+          @include line();
+          bottom: -5px;
+        }
+      }
+      &:last-child{
+        margin: 0;
+      }
+      li{
+        margin: 0 auto;
+      }
+      a{
+        line-height: 30px;
+      }
+    }
+  }
+  .left{
+    padding-top: 30px;
+  }
+  .header{
+    .buttons{
+      margin-top: 30px;
+    }
   }
   .phone{
     padding-left: 0;
@@ -945,8 +1083,8 @@ p{
     margin: 0 auto;
   }
   .author{
-     justify-content: center;
-    }
+    justify-content: center;
+  }
 }
 
 
@@ -955,6 +1093,28 @@ p{
   img{
     max-width: 100%;
     height: auto;
+  }
+  .header{
+    height: 100%;
+    img{
+      display: block;
+      margin: 0 auto;
+      max-width: 50%;
+      height: auto;
+    }
+    .buttons{
+      margin-bottom: 30px;
+      justify-content: space-around;
+    }
+    h1,h2,p{
+      text-align: center;
+    }
+    .descript{
+      width: 100%;
+    }
+  }
+  .main-content{
+    flex-direction: column-reverse;
   }
   .descript{
     width:100%;
@@ -1022,11 +1182,19 @@ p{
       width: 45%;
     }
   }
+  .feedback{
+    padding-top: 25px;
+  }
 }
 
 
 @media (max-width: 576px) {
-
+  .top{
+    padding: 0;
+  }
+  .link{
+    top:-100px;
+  }
   .details{
     .descript{
       display: block;
@@ -1046,4 +1214,9 @@ p{
   .slick-dots{
     margin-top: 60px;
   }
+
+  .feedback{
+    width: 100%;
+  }
+
 }

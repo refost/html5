@@ -36,26 +36,31 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/slick.min.js"></script>
 
-<header class="header" id="header">
+<header class="header" id="home">
   <div class="container">
-
-    <div class="top row">
-      <div class="logo col-xl-2 col-lg-2">
-        <span class="logo-text">lucid</span>
-        <p>onepage theme</p>
+    <div class="top-fix">
+      <div class="container">
+        <div class="top row">
+        <div class="logo col-xl-2">
+          <span class="logo-text">lucid</span>
+          <p>onepage theme</p>
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+        <nav class="nav col-xl-5">
+          <ul class="main-navigation">
+            <li><a class="lines" href="#home">Home</a></li>
+            <li><a class="lines" href="#features">Features</a></li>
+            <li><a class="lines" href="#about">About</a></li>
+            <li><a class="lines" href="#testi">Testimonials</a></li>
+            <li><a class="lines" href="#pricing">Pricing</a></li>
+            <li><a class="lines" href="#contacts">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="col-xl-5 col-lg-5">
-        <ul class="main-navigation">
-          <li><a class="lines" href="#">Home</a></li>
-          <li><a class="lines" href="#">Features</a></li>
-          <li><a class="lines" href="#">About</a></li>
-          <li><a class="lines" href="#">Testimonials</a></li>
-          <li><a class="lines" href="#">Pricing</a></li>
-          <li><a class="lines" href="#">Contact</a></li>
-        </ul>
-      </nav>
+      </div>
     </div>
-
     <div class="main-content row">
       <div class="left col-xl-6 col-lg-6 col-md-6">
         <div class="title">
@@ -86,6 +91,7 @@
 </header>
 
 <section class="overview">
+  <a name="features" class="link"></a>
   <div class="container">
     <div class="row">
       <div class="title-center lines col-12">
@@ -143,6 +149,7 @@
 </section>
 
 <section class="details">
+  <a name="about" class="link"></a>
   <div class="container">
     <div class="row content">
       <div class="col-md-6">
@@ -197,6 +204,7 @@
 </section>
 
 <section class="plans">
+  <a name="testi" class="link"></a>
   <div class="container">
     <div class="row">
       <div class="title-center lines col-12">
@@ -283,7 +291,8 @@
   </div>
 </section>
 
-<section class="plans-sec">
+<section class="plans-sec" >
+  <a name="pricing" class="link"></a>
   <div class="container">
     <div class="row">
       <div class="title-center lines col-12">
@@ -292,7 +301,7 @@
       </div>
     </div>
     <div class="price row">
-      <div class="col-lg-3 col-md-5">
+      <div class="col-lg-3 col-sm-6 col-10">
         <div class="price-item fir">
           <div class="type">
             <h4>free</h4>
@@ -314,7 +323,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-5">
+      <div class="col-lg-3 col-sm-6 col-10">
         <div class="price-item sec">
           <div class="type">
             <h4>personal</h4>
@@ -336,7 +345,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-5">
+      <div class="col-lg-3 col-sm-6 col-10">
         <div class="price-item thi">
           <div class="type">
             <h4>business</h4>
@@ -358,7 +367,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-5">
+      <div class="col-lg-3 col-sm-6 col-10">
         <div class="price-item four">
           <div class="type">
             <h4>ultimate</h4>
@@ -385,6 +394,7 @@
 </section>
 
 <section class="touch">
+  <a name="contacts" class="link"></a>
   <div class="container">
     <div class="row">
       <div class="title-center lines col-12">
@@ -418,7 +428,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-8">
+      <div class="form col-lg-8">
         <form class="feedback" action="">
           <div class="personal">
             <input type="text" name="name" class="form-item" id="name" placeholder="name *" required>

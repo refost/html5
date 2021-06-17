@@ -17,4 +17,20 @@ $(document).ready(function () {
       }
       ]
   });
+
+  $(window).on('scroll',function(){
+    let wn = $(window).scrollTop();
+    if(wn > 40){
+      $('.top-fix').css('background-color', '#1a1a1a');
+    }
+    else{
+      $('.top-fix').css('background-color', '');
+    }
+  });
+
+  $('.burger').click(function(event){
+    $('nav').toggleClass('active-menu');
+    $('.top-fix').toggleClass('background');
+  });
+
 })
