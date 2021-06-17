@@ -1,0 +1,111 @@
+
+.touch {
+  padding-top: 57px;
+  padding-bottom: 4px;
+  background-color: $greyBack2;
+  .lines {
+    &:before {
+      bottom: -30px;
+      transform: translate(1px, 0);
+    }
+
+    &:after {
+      bottom: -30px;
+      transform: translate(-21px, 0);
+    }
+  }
+  .col-8{
+    margin: 0 auto;
+  }
+}
+
+.contacts{
+  padding-top: 89px;
+}
+
+.contacts-item{
+  img{
+    display: block;
+    margin: 0 auto 26px auto;
+  }
+  p{
+    display: block;
+    text-align: center;
+    line-height: 26px;
+    span{
+      display: block;
+    }
+  }
+}
+
+.cont-ph{
+  img{
+    margin: 0 auto 26px auto;
+  }
+  p{
+    margin-left: -3px;
+  }
+}
+
+.post{
+  padding-top: 5px;
+  img{
+    margin-bottom: 31px;
+    position: relative;
+    left: -1px;
+  }
+}
+
+.form{
+  margin: 0 auto;
+}
+
+
+.feedback{
+  margin: 0 auto;
+  padding: 59px 85px 40px 66px;
+  position: relative;
+  top: 69px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $blackDiv;
+  .btn-filled{
+    padding-top: 0;
+    margin-left: auto;
+    border: none;
+  }
+}
+
+.personal{
+  width:300px;
+}
+
+.message{
+  padding-left: 19px;
+  width: 320px;
+  .form-item{
+    padding-top: 15px;
+    height: 190px;
+    resize: none;
+    padding-left: 19px;
+    line-height: normal;
+  }
+}
+
+.form-item{
+  margin-bottom: 20px;
+  padding: 0 15px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0,142,214,0);
+  border: 1px solid $borderBtnInput;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 48px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  &::placeholder{
+    opacity: 0.2;
+  }
+}

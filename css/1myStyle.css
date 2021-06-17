@@ -354,6 +354,66 @@ mark,
   .blockquote-footer::before {
     content: "\2014 \00A0"; }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto; }
+
+.figure {
+  display: inline-block; }
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1; }
+
+.figure-caption {
+  font-size: 90%;
+  color: #6c757d; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+code {
+  font-size: 87.5%;
+  color: #e83e8c;
+  word-break: break-word; }
+  a > code {
+    color: inherit; }
+
+kbd {
+  padding: 0.2rem 0.4rem;
+  font-size: 87.5%;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.2rem; }
+  kbd kbd {
+    padding: 0;
+    font-size: 100%;
+    font-weight: 700; }
+
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: #212529; }
+  pre code {
+    font-size: inherit;
+    color: inherit;
+    word-break: normal; }
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll; }
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -942,6 +1002,11 @@ mark,
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+/*--- Mixin ---*/
+/*--- Mixin ---*/
+/*--- Variable ---*/
+/*--- Variable ---*/
+/*---General classes---*/
 div, span, a, h1, h2, h3, h4, h5, p, ul, li, body {
   margin: 0;
   padding: 0;
@@ -1069,6 +1134,8 @@ p {
 .burger {
   display: none; }
 
+/*---General classes---*/
+/*--- HEADER ---*/
 .header {
   background-color: #15141a;
   height: 640px;
@@ -1167,6 +1234,8 @@ p {
   padding-top: 23px;
   padding-left: 93px; }
 
+/*---HEADER--*/
+/*---SECTION OVERVIEW---*/
 .overview {
   padding-top: 62px;
   padding-bottom: 71px;
@@ -1209,6 +1278,8 @@ p {
     .feature .descript p {
       padding-top: 15px; }
 
+/*---SECTION OVERVIEW---*/
+/*---SECTION DETAILS---*/
 .details {
   padding-top: 66px;
   padding-bottom: 19px; }
@@ -1276,6 +1347,7 @@ p {
   top: 2px;
   content: url("../img/icons/Speedomet.png"); }
 
+/*---SECTION DETAILS---*/
 .details-sec {
   padding-top: 66px;
   padding-bottom: 163px;
@@ -1299,13 +1371,15 @@ p {
     top: -33px;
     right: -4px; }
 
+/*---SECTION DETAILS-SEC---*/
+/*---SECTION PLANS---*/
 .plans {
   padding-top: 61px;
   padding-bottom: 61px;
   background-color: #15141a;
   background-image: url("../img/Warstwa 8.png");
   background-repeat: no-repeat;
-  background-position: -13px 59px; }
+  background-size: cover; }
   .plans h3, .plans p {
     color: #fff; }
   .plans .lines:before {
@@ -1384,19 +1458,20 @@ p {
       text-transform: uppercase;
       letter-spacing: -0.1px; }
 
+/*---SECTION PLANS---*/
+/*---SECTION NOW---*/
 .now {
   padding-bottom: 60px;
   background-color: #15141a; }
   .now p {
-    margin-left: -1px;
     padding-top: 53px;
     font-size: 36px;
     line-height: 48px;
     color: #ffffff;
     font-weight: 200;
-    letter-spacing: 0.24px; }
+    letter-spacing: 0.22px; }
     .now p span {
-      letter-spacing: 0.09px;
+      letter-spacing: 0.1px;
       font-weight: 600; }
   .now .row {
     align-items: center; }
@@ -1408,6 +1483,8 @@ p {
   .now .btn-empty {
     margin-right: 20px; }
 
+/*---SECTION NOW---*/
+/*---SECTION PLANS-SEC---*/
 .plans-sec {
   padding-top: 57px;
   padding-bottom: 60px; }
@@ -1429,13 +1506,11 @@ p {
     margin-right: auto;
     margin-left: auto;
     padding-top: 1px;
-    padding-right: 2px;
+    padding-right: 1px;
     height: 52px;
     width: 162px;
     border-color: #e0e0e0;
     color: #008ed6; }
-  .plans-sec .four-btn {
-    padding-right: 4px; }
 
 .fir {
   margin: 0 -1px 0 -1px; }
@@ -1496,6 +1571,8 @@ p {
   color: #1a1a1a;
   font-weight: 600; }
 
+/*---SECTION PLANS-SEC---*/
+/*---SECTION TOUCH---*/
 .touch {
   padding-top: 57px;
   padding-bottom: 4px;
@@ -1581,6 +1658,10 @@ p {
   .form-item::placeholder {
     opacity: 0.2; }
 
+/*---SECTION TOUCH---*/
+/*---SECTION MAP---*/
+/*---SECTION MAP---*/
+/*---FOOTER---*/
 .footer {
   padding-top: 55px;
   background-color: #15141a; }
@@ -1622,6 +1703,8 @@ p {
   display: flex;
   justify-content: space-around; }
 
+/*---FOOTER---*/
+/*---adaptive---*/
 @media (max-width: 1200px) {
   .container {
     max-width: 90%; }
@@ -1848,4 +1931,4 @@ p {
   .slick-dots {
     margin-top: 60px; } }
 
-/*# sourceMappingURL=myStyle.css.map */
+/*# sourceMappingURL=1myStyle.css.map */

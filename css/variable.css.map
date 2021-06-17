@@ -1,0 +1,1 @@
+{"version":3,"file":"variable.css","sources":["variable.scss"],"sourcesContent":["\n$myBlue: #008ed6;\n\n$greyText: #999;\n\n$blackText: #1a1a1a;\n\n$greyBack1: #f2f2f2;\n\n$greyBack2: #ededed;\n\n$forBorder: #e0e0e0;\n\n$borderBtnInput: rgba(255,255,255,0.2);\n\n$blackDiv: #15141a;\n"],"names":[],"mappings":""}

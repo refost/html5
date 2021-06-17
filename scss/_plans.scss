@@ -1,0 +1,104 @@
+
+.plans{
+  padding-top: 61px;
+  padding-bottom: 61px;
+  background-color: $blackDiv;
+  background-image: url("../img/Warstwa 8.png");
+  background-repeat: no-repeat;
+  //background-size: initial;
+  background-position: -13px 59px;
+  h3,p{
+    color: #fff;
+  }
+  .lines{
+    &:before{
+      bottom: -30px;
+      transform: translate(1px, 0);
+    }
+    &:after{
+      bottom: -30px;
+      transform: translate(-21px, 0);
+    }
+  }
+}
+
+.slider{
+  padding-top: 115px;
+  overflow: hidden;
+}
+
+.slick-track{
+  display: flex;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-top: 129px;
+  margin-left: 22px;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots button {
+  margin-right: 21px;
+  font-size: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0);
+  border: 1px solid $borderBtnInput;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.slick-active button {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.slide{
+  display: flex;
+  flex-direction: column;
+}
+
+.descrip-slide{
+  padding-left: 13px;
+  width:95%;
+  font-size: 24px;
+  line-height: 32.7px;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.03px;
+}
+
+.author{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 15px;
+  img{
+    margin-top: 13px;
+    border-radius: 50%;
+  }
+  p{
+    padding-top: 11px;
+    padding-left: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    span{
+      display: block;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.1px;
+    }
+  }
+}

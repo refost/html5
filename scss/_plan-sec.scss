@@ -1,0 +1,108 @@
+
+.plans-sec{
+  padding-top: 57px;
+  padding-bottom: 60px;
+  .lines{
+    &:before{
+      bottom: -30px;
+      transform: translate(1px, 0);
+    }
+    &:after{
+      bottom: -30px;
+      transform: translate(-21px, 0);
+    }
+  }
+  .descript{
+    padding-top: 45px;
+    padding-left: 6px;
+    width: 75%;
+    margin: 0 auto;
+    span{
+      color: $myBlue;
+    }
+  }
+  .btn-empty{
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 1px;
+    padding-right: 2px;
+    height: 52px;
+    width: 162px;
+    border-color: $forBorder;
+    color: $myBlue;
+  }
+  .four-btn{
+    padding-right: 4px;
+  }
+}
+
+.fir{
+  margin: 0 -1px 0 -1px;
+  .descript{
+    padding-left: 0;
+  }
+}
+
+.sec{
+  margin: 0 0 0 -2px;
+}
+
+.thi{
+  margin: 0 0 0 -2px;
+}
+
+.four{
+  margin: 0 0 0 -2px;
+}
+
+.price{
+  padding-top: 100px;
+}
+
+.price-item{
+  padding: 0;
+  padding-bottom: 28px;
+  border: 1px solid $forBorder;
+  text-align: center;
+}
+
+.type{
+  padding-top: 27px;
+  padding-bottom: 22px;
+  h4{
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+  }
+}
+
+.expensive {
+  padding-bottom: 32px;
+  border-top: 1px solid $forBorder;
+  border-bottom: 1px solid $forBorder;
+}
+
+.cost{
+  padding-top: 48px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+.dollar{
+  display: block;
+  font-size: 28px;
+  line-height: 12px;
+}
+.number{
+  padding-right: 6px;
+  display: block;
+  align-self: center;
+  font-size: 60px;
+  line-height: 28px;
+  color: $blackText;
+  font-weight: 600;
+}

@@ -1,0 +1,32 @@
+
+.now{
+  padding-bottom: 60px;
+  background-color: $blackDiv;
+  p{
+    margin-left: -1px;
+    padding-top: 53px;
+    font-size: 36px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: 200;
+    letter-spacing: 0.24px;
+    span{
+      letter-spacing: 0.09px;
+      font-weight: 600;
+    }
+  }
+  .row{
+    align-items: center;
+  }
+  .col-8{
+    padding-left: 14px;
+  }
+  .buttons{
+    margin-top: 59px;
+    padding-left: 25px;
+  }
+  .btn-empty{
+    margin-right: 20px;
+
+  }
+}

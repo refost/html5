@@ -1,0 +1,91 @@
+
+.details {
+  padding-top: 66px;
+  padding-bottom: 19px;
+  img {
+    margin-left: 20px;
+  }
+
+  .left {
+    padding-top: 50px;
+    padding-left: 15px;
+  }
+  .lines{
+    &:before{
+      bottom: -27px;
+      transform: translate(22px, 0);
+    }
+    &:after{
+      bottom: -27px;
+      transform: translate(0, 0);
+    }
+  }
+  .descript{
+    padding-top: 51px;
+    width:85%;
+  }
+}
+
+.non{
+  letter-spacing: 1.1px;
+}
+
+.mauris{
+  letter-spacing: 0.1px;
+}
+
+.erat{
+  letter-spacing: 0.6px;
+}
+
+.erat{
+  letter-spacing: 0.1px;
+}
+
+
+.special{
+  padding-top: 28px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #1b1b1b;
+  font-weight: 400;
+  list-style-position: inside;
+  li{
+    list-style-type: none;
+    padding-bottom: 6px;
+  }
+}
+.design{
+  &:before{
+    padding-right: 9px;
+    position: relative;
+    top: 2px;
+    content:url("../img/icons/Cup.png");
+  }
+}
+.resp{
+  &:before{
+    padding-right: 15px;
+    position: relative;
+    top: 2px;
+    left: 3px;
+    content:url("../img/icons/Mouse.png");
+  }
+}
+.retina{
+  &:before{
+    padding-right: 15px;
+    position: relative;
+    top: 2px;
+    left: 3px;
+    content:url("../img/icons/Energy.png");
+  }
+}
+.tons{
+  &:before{
+    padding-right: 9px;
+    position: relative;
+    top: 2px;
+    content:url("../img/icons/Speedomet.png");
+  }
+}

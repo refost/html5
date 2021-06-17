@@ -1,0 +1,38 @@
+
+@mixin flex-between(){
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin button(){
+  border-radius: 4px;
+  display: block;
+  width: 160px;
+  height: 50px;
+  font-size: 14px;
+  line-height: 48px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Source Sans Pro";
+  text-align: center;
+  text-transform: uppercase;
+  &:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@mixin links(){
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@mixin line(){
+  content: '';
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  background-color: $myBlue;
+}

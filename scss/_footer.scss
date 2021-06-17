@@ -1,0 +1,58 @@
+
+.footer{
+  padding-top: 55px;
+  background-color: $blackDiv;
+  p{
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 48px;
+    color: #444348;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  i {
+    color: #444348;
+    display: block;
+    font-size: 18px;
+    &:hover {
+      color: $myBlue;
+    }
+  }
+  .fa-behance{
+    margin-left: -1px;
+    margin-top: 1px;
+  }
+
+  .fa-dribbble{
+    margin-left: -4px;
+  }
+
+  .fa-twitter{
+    margin-left: -2px;
+  }
+
+  .fa-facebook-f{
+    margin-left: 1px;
+  }
+
+  .fa-linkedin-in{
+    margin-left: 2px;
+    margin-right: -2px;
+    font-size: 20px;
+  }
+}
+
+.social{
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
