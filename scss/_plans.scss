@@ -6,7 +6,9 @@
   background-color: $blackDiv;
   background-image: url("../img/back2.png");
   background-repeat: no-repeat;
-  background-position: -14px -57px;
+  background-size: 1473px 1007px;
+  background-position: center;
+  background-position-y: -57px;
   overflow: hidden;
   h3,p{
     color: #fff;
@@ -23,11 +25,12 @@
   }
 }
 
-.back2{
-  position: absolute;
-  background-image: url("../img/back1.png");
-  height: 1007px;
-}
+//.back2{
+//  position: absolute;
+//  background-image: url("../img/back1.png");
+//  width: 100%;
+//  height: auto;
+//}
 
 .slider{
   padding-top: 115px;

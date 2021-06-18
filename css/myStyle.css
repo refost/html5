@@ -1307,7 +1307,9 @@ p {
   background-color: #15141a;
   background-image: url("../img/back2.png");
   background-repeat: no-repeat;
-  background-position: -14px -57px;
+  background-size: 1473px 1007px;
+  background-position: center;
+  background-position-y: -57px;
   overflow: hidden; }
   .plans h3, .plans p {
     color: #fff; }
@@ -1317,11 +1319,6 @@ p {
   .plans .lines:after {
     bottom: -30px;
     transform: translate(-21px, 0); }
-
-.back2 {
-  position: absolute;
-  background-image: url("../img/back1.png");
-  height: 1007px; }
 
 .slider {
   padding-top: 115px;
@@ -1631,6 +1628,11 @@ p {
   width: 250px;
   display: flex;
   justify-content: space-around; }
+
+@media (min-width: 1441px) {
+  .plans {
+    background-position: 0 0;
+    background-size: cover; } }
 
 @media (max-width: 1200px) {
   .container {

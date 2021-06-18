@@ -1,4 +1,11 @@
 
+@media (min-width: 1441px){
+  .plans {
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1200px) {
   .container{
     max-width: 90%;
