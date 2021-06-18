@@ -1,12 +1,13 @@
 
+
 .plans{
   padding-top: 61px;
   padding-bottom: 61px;
   background-color: $blackDiv;
-  background-image: url("../img/Warstwa 8.png");
+  background-image: url("../img/back2.png");
   background-repeat: no-repeat;
-  //background-size: initial;
-  background-position: -13px 59px;
+  background-position: -14px -57px;
+  overflow: hidden;
   h3,p{
     color: #fff;
   }
@@ -20,6 +21,12 @@
       transform: translate(-21px, 0);
     }
   }
+}
+
+.back2{
+  position: absolute;
+  background-image: url("../img/back1.png");
+  height: 1007px;
 }
 
 .slider{

@@ -1288,6 +1288,8 @@ p {
   .details-sec .lines:after {
     bottom: -29px;
     transform: translate(0, 0); }
+  .details-sec h3 span {
+    letter-spacing: 0.3px; }
   .details-sec .descript {
     padding-top: 51px;
     width: 85%; }
@@ -1303,9 +1305,10 @@ p {
   padding-top: 61px;
   padding-bottom: 61px;
   background-color: #15141a;
-  background-image: url("../img/Warstwa 8.png");
+  background-image: url("../img/back2.png");
   background-repeat: no-repeat;
-  background-position: -13px 59px; }
+  background-position: -14px -57px;
+  overflow: hidden; }
   .plans h3, .plans p {
     color: #fff; }
   .plans .lines:before {
@@ -1314,6 +1317,11 @@ p {
   .plans .lines:after {
     bottom: -30px;
     transform: translate(-21px, 0); }
+
+.back2 {
+  position: absolute;
+  background-image: url("../img/back1.png");
+  height: 1007px; }
 
 .slider {
   padding-top: 115px;
@@ -1450,6 +1458,8 @@ p {
 
 .four {
   margin: 0 0 0 -2px; }
+  .four .descript {
+    margin-left: 33px; }
 
 .price {
   padding-top: 100px; }
