@@ -14,7 +14,7 @@
   }
   .descript{
     padding-top: 45px;
-    padding-left: 6px;
+    padding-left: 4px;
     width: 75%;
     margin: 0 auto;
     span{
@@ -68,6 +68,23 @@
   padding-bottom: 28px;
   border: 1px solid $forBorder;
   text-align: center;
+  &:hover{
+    .expensive{
+      border-color: $myBlue;
+      box-shadow: -1px 0px 0px 0px $myBlue, 1px 0px 0px 0px $myBlue;
+      background-color: $myBlue;
+      p,span,i{
+        color: #fff;
+      }
+    }
+    .btn-empty{
+      color: #fff;
+      background-color: $myBlue;
+    }
+    h4{
+      color: $myBlue;
+    }
+  }
 }
 
 .type{

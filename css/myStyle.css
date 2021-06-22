@@ -1424,7 +1424,7 @@ p {
     transform: translate(-21px, 0); }
   .plans-sec .descript {
     padding-top: 45px;
-    padding-left: 6px;
+    padding-left: 4px;
     width: 75%;
     margin: 0 auto; }
     .plans-sec .descript span {
@@ -1466,6 +1466,17 @@ p {
   padding-bottom: 28px;
   border: 1px solid #e0e0e0;
   text-align: center; }
+  .price-item:hover .expensive {
+    border-color: #008ed6;
+    box-shadow: -1px 0px 0px 0px #008ed6, 1px 0px 0px 0px #008ed6;
+    background-color: #008ed6; }
+    .price-item:hover .expensive p, .price-item:hover .expensive span, .price-item:hover .expensive i {
+      color: #fff; }
+  .price-item:hover .btn-empty {
+    color: #fff;
+    background-color: #008ed6; }
+  .price-item:hover h4 {
+    color: #008ed6; }
 
 .type {
   padding-top: 27px;
